@@ -1,689 +1,406 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.161.0">
-    <title>Mon CV</title>
-    <link rel="canonical" href="https://basmaarran-pixel.github.io/basmaganfoud-pixel.github.io/">
-    
-    
-    
-    <meta name="description" content="Je suis etudiante en systeme embarque &hellip;">
-    
-    
-    
-    <style>
-
-
-
-
-    
-
-
-:root {
-    --site-bg: url("/flowertile.png");
-    --accent-color: #f55cc0;
-    --select-color: #ffc1e9;
-    --link-color: #5083C1;
-    --bg-color: #CEEAFF;
-    --text-color: #191919;
-    --bg-color2: white;
-    --border-color: #215697;
-    --special-text-color: #215697;
-    --post-header-color: white;
-    --post-shadow-color: #21569760;
-    --outline-color: #6EAAD6;
-    --outline-color2: #CEEAFF;
-    --list-style-type: "";
-    --list-style-image: url("/flower.png");
-}
-
-* {
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@-moz-document url-prefix() {
-    * {
-        scrollbar-width: thin;
-        scrollbar-color: var(--accent-color) #00000000;
-    }
-}
-
-::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
-    background: #00000000;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
-    -webkit-border-radius: .3rem;
-    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
-}
-
-::-webkit-scrollbar-corner {
-    background: #000;
-}
-
-::selection {
-    background: var(--select-color);
-    color: var(--border-color);
-}
-
-body {
-    background-color: var(--bg-color);
-    background-image: var(--site-bg);
-    margin: 0;
-    font-size: 14px;
-    color: var(--text-color);
-}
-
-p {line-height: 1.5em;}
-
-div.tags {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: .5rem 0;
-}
-
-div.tags > p.tags {
-    text-align: center;
-    margin-bottom: 0;
-}
-
-div.tags > a {
-    margin-top: .5rem;
-}
-
-h1 {
-    font-size: 1.5em;
-    color: var(--post-header-color);
-    filter: drop-shadow(2px 0 0 var(--outline-color)) drop-shadow(0 2px 0 var(--outline-color)) drop-shadow(-2px 0 0 var(--outline-color)) drop-shadow(0 -2px 0 var(--outline-color))drop-shadow(0 1px 1px var(--outline-color2)) drop-shadow(1px 0 1px var(--outline-color2));
-}
-
-h4,
-h5,
-h6 {color: var(--special-text-color);}
-
-header {
-    background-size: 100%;
-    background-position: center;
-    min-height: 80px;
-    margin: 0 0;
-    align-content: center;
-}
-
-header > h1 {
-    background-color: var(--bg-color2);
-    color: var(--special-text-color);
-    margin: 0 auto;
-    font-size: 2em;
- 
-     
-    max-width: 48rem;
-    padding: 6px 12px;
-    border-radius: 1em;
-    border: 4px double var(--outline-color);
-    filter: none;
-    text-align: center;
-}
-
-ul.pagination {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-
-ul.tags {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
-}
-
-ul.tags li {
-    display: inline-block;
-    margin: 0 .2rem;
-}
-
-li.page-item {
-    list-style: none;
-}
-
-li.page-item a{
-    display: inline-flex;
-    font-size: 1rem;
-    margin: .2rem;
-    background-color: var(--bg-color2);
-    color: var(--text-color);
-    padding: 1em;
-    border: 2px solid var(--border-color);
-    border-radius: .3em;
-    margin-bottom: 1em;
-    box-shadow: var(--post-shadow-color) 5px 5px;
-
-    text-decoration: none;
-    user-select: none;
-}
-
-li.page-item.active a{
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-li.page-item.disabled a{
-    cursor: not-allowed;
-}
-
-li.page-item:not(.disabled):not(.active) a:hover{
-    background-color: var(--select-color);
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-li {
-    
-        list-style-image: var(--list-style-image);
-    
-}
-
-nav {margin: 1em;}
-
-nav.links > ul {
-    max-width: 960px;
-    margin: auto;
-    line-height: 3rem;
-    list-style-type: none;
-    padding-left: 0;
-    justify-content: space-evenly;
-}
-
-nav.links li {
-    text-align: center;
-    list-style-image: none;
-    list-style-type: none;
-}
-
-nav.links li > a {
-    font-weight: bold;
-    background-color: var(--bg-color);
-    border: 4px double var(--outline-color);
-    padding: .5em 3em;
-    text-decoration: none;
-}
-
-nav.links li > a:visited {color: var(--link-color);}
-nav.links li > a:hover {
-    color: var(--accent-color);
-    background-color: var(--select-color);
-}
-
-nav.languages {
-    margin: .3em;
-    text-align: center;
-}
-
-
-nav.languages ul {
-    display: inline-block;
-}
-
-nav.languages ul li {
-    display: inline-block;
-}
-
-a {
-    color: var(--link-color);
-    border-radius: .3em;
-    transition: .2s ease-out;
-}
-
-a:visited {
-    color: var(--text-color);
-}
-
-a:hover {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-    transition: .2s ease;
-}
-
-#sidebar {
-    background-color: var(--bg-color2);
-    color: var(--special-text-color);
-    height: fit-content;
-    min-width: 320px;
-    margin-top: 1em;
-    margin-right: 2em;
-    border-radius: .5em;
-}
-
-.small-box {
-    max-width: 240px;
-    margin: auto;
-    border: 2px solid var(--bg-color);
-    font-size: 11px;
-    line-height: 1.5rem;
-}
-
-#avatar {
-    margin: .5em;
-    max-width: 320px;
-}
-
- 
-.flower {
-    width: 300px; 
-    aspect-ratio: 1;
-    
-    
-        border-radius: 50%;
-    
-    
-}
-
-#bio {
-    margin: 20px;
-    padding: .2em;
-    background: var(--bg-color);
-    border: 4px double var(--bg-color2);
-    border-radius: 2em;
-    font-size: small;
-}
-
-#bio p { margin: 1em; }
-
-#content {
-    display: flex;
-    max-width: 960px;
-    margin: auto;
-}
-
-main {
-    padding: 1em;
-    padding-top: 0;
-}
-
-#top {
-    background-color: var(--bg-color);
-}
-
-#top section {
-    background-color: var(--bg-color2);
-    border-radius: .5em;
-    margin-bottom: 10px;
-    padding: .5em 1em;
-    width: 100%;
-}
-
-article {
-    background-color: var(--bg-color2);
-    padding: 1em;
-    border: 2px solid var(--border-color);
-    border-radius: .3em;
-    margin-bottom: 1em;
-    box-shadow: var(--post-shadow-color) 5px 5px;
-}
-article img {
-    max-width: 100%;
-}
-
-.readmore summary {
-    font-weight: bold;
-    color: var(--special-text-color);
-    list-style: none;
-    cursor: pointer;
-}
-
-header h1 a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--special-text-color);
-}
-
-header h1 a:visited {
-    color: inherit;
-}
-
-header h1 a:hover {
-    color: inherit;
-}
-
-.readmore div {
-    display: inline;
-}
-
-.readmore div p {
-    display: block;
-}
-
-.read-more-btn {
-    display: inline;
-    cursor: pointer;
-    margin-left: 4px;
-    color: var(--link-color);
-    text-decoration: underline;
-}
-
-.readmore summary::-webkit-details-marker {
-  display: none;
-}
-
-.readmore[open] > summary {
-    border-bottom: 2px dashed var(--bg-color);
-    padding-bottom: .6em;
-    margin-bottom: .6em;
-}
-
-.post-header {
-    color: var(--special-text-color);
-    font-weight: bold;
-    padding: .5rem 0;
-    border-bottom: 4px double var(--outline-color);
-}
-
-.timestamp {
-    font-weight: normal;
-    font-size: smaller;
-    margin: .2em;
-    float: right;
-}
-
-.tag-item p {
-    font-size: smaller;
-}
-
-.photosetx2,
-.photosetx3 {
-    display: grid;
-    gap: 4px;
-    align-items: center;
-}
-
-.photosetx2 {grid-template-columns: 1fr 1fr;}
-.photosetx3 {grid-template-columns: 1fr 1fr 1fr;}
-
-.cropped {
-    width: 156px;
-    height: 156px;
-    overflow: hidden;
-    object-position: 25% 25%;
-}
-.photosetx2 img,
-.photosetx3 img {object-fit: cover;}
-
-.center { text-align: center; }
-
-.img-right {
-    max-width: 7.5em;
-    max-height: 7.5em;
-    float: right;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.small-text {
-    font-size: 11px;
-    text-shadow: var(--bg-color) 1px 1px;
-}
-
-.dropbox-btn {
-    color: var(--link-color);
-    font-weight: bold;
-    background-color: var(--bg-color);
-     
-    border: 1px solid var(--outline-color);
-     
-    text-decoration: none;
-}
-
-.dropbox-content[visible] {
-    display: block;
-}
-
-.dropbox-content {
-    display: none;
-    position: absolute;
-    z-index: 1
-}
-
-.table-of-contents {
-    background-color: var(--bg-color2);
-    padding: .3em;
-    border: 2px solid var(--border-color);
-    border-radius: .3em;
-    box-shadow: var(--post-shadow-color) 5px 5px;
-}
-
-.table-of-contents.sidebar {
-    position: sticky;
-    top: 1rem;
-    height: fit-content;
-    width: 10rem;
-    flex-shrink: 0;
-    max-height: calc(100vh - 2rem);
-    overflow-x: auto;
-}
-
-.table-of-contents.float {
-    width: max-content;
-    max-width: 50vw;
-    max-height: 50%;
-    overflow: auto;
-}
-
-.table-of-contents nav {
-    margin: 0 .5em;
-}
-
-.table-of-contents nav ul {
-    margin: .5em 1em;
-    padding: 0;
-}
-
-.table-of-contents nav li {
-    margin: .3em 0;
-}
-
-#single-post {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-#single-post > article {
-    max-width: 48rem
-}
-
-#single-post > article > #post-toc-mobile {
-    display: none;
-}
-
- 
-@media only screen and (max-width: 800px) {
-    #content {
-        flex-wrap: wrap;
-    }
-    #sidebar {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        border-radius: 0;
-        margin-right: 0;
-        margin-bottom: 1em;
-        border-radius: .3em;
-    }
-    header {min-height: 110px;}
-    header > h1 { 
-        width: fit-content;
-        padding: .3em 1em;
-    }
-    nav.links > ul {
-     
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    #bio {width: 50%;}
-    
-    #sidebar ul {
-        line-height: 2em;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1em;
-    }
-    #sidebar > .small-box li {
-        margin: .3em 1em;
-    }
-
-    #single-post > .table-of-contents.sidebar {
-        display: none;
-    }
-
-    #single-post > article > #post-toc-mobile {
-        display: inline;
-    }
-}
-
-pre {
-    border:1px solid var(--outline-color);
-    border-radius:6px;
-    padding:0.75rem 1rem;
-    margin:1.2rem 0;
-    overflow-x:auto;  
-}
-</style>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-    <meta charset="utf-8">
-</head>
-<body>
-        <header><h1 id="Mon CV"><a href="https://basmaarran-pixel.github.io/">Mon CV</a></h1></header>
-<main>
-    
-    
-    <div id="content">
-    <aside id="sidebar">
-        <div id="avatar">
-            
-            <img class="flower" src="/avatar.jpg">
-            
-        </div>
-        
-        <div id="bio">
-        
-            <p>🎓 Etudiante Ingenieur - INPT Rabat</p>
-
-        
-        </div>
-        
-        <div class="small-box">
-            
-            </ul>
-        </div>
-
-        
-        
-        <nav class="links">
-            <ul>
-            
-            
-                <li><a href="https://github.com/">github</a></li>
-            
-                <li><a href="https://linkedin.com/">linkedin</a></li>
-            
-            
-            </ul>
-        </nav>
-    </aside>
-    <main>
-        <article id="top" class="clearfix">
-            
-            <section>
-            <div class="img-right">
-                <img src="/images/avatar.jpg">
-            </div>
-            <div>
-            <h1>About me</h1>
-            
-                <p>Je suis Basma GANFOUD, etudiante en 1ere annee cycle ingenieur a l&#39;Institut National des Postes et Telecommunications (INPT) de Rabat.</p>
-            
-                <p>Passionnee par l&#39;ingenierie des donnees, les systemes embarques et le developpement logiciel, je combine une approche theorique rigoureuse avec une mise en pratique technique.</p>
-            
-                <p>Mon parcours m&#39;a permis de travailler sur des projets IoT, de la programmation de microcontroleurs et de la modelisation logicielle via UML.</p>
-            
-            </div>
-            </section>
-            <section>
-            <h4>Expertises :</h4>
-                <ul>
-                
-                    <li>Electronique embarquee (Arduino, NodeMCU, PIC)</li>
-                
-                    <li>Langage SQL et gestion de bases de donnees</li>
-                
-                    <li>Modelisation UML</li>
-                
-                    <li>Developpement Web (Hugo, GitHub)</li>
-                
-                </ul>
-            </section>
-            
-        </article>
-    
-    
-    
-    
-    <script>
-    window.addEventListener('click', e => {
-        let dropboxs = document.getElementsByClassName("dropbox-content");
-        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
-
-        if (dropbox_btns.namedItem(e.target.id) != null) return;
-
-        if(dropboxs.namedItem(e.target.id) == null) {
-            for (let i = 0; i < dropboxs.length; i++) {
-                dropboxs[i].removeAttribute("visible");
-            }
+<!doctype html>
+<html
+    lang="en-us"
+    class="m-auto  dark "
+><head>
+	<meta name="generator" content="Hugo 0.161.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+  <title>Basma Ganfoud</title>
+  
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta name="theme-color" content="" />
+  <meta name="description" content="Portfolio de Basma Ganfoud" />
+  <meta name="author" content="Basma Ganfoud" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+   
+  <link href="/main.css" rel="stylesheet" />
+  
+
+  <script>
+    const expandAccordion = (elem) => {
+      const allPanels = Array.from(document.querySelectorAll(".panel"));
+      const allAccordion = Array.from(document.querySelectorAll(".accordion"));
+
+      if (!elem.parentElement.classList.contains("active")) {
+        allAccordion.forEach((acc) => {
+          acc.classList.remove("active");
+        });
+        elem.parentElement.classList.add("active");
+        allPanels.forEach(function (elem) {
+          elem.style.maxHeight = null;
+        });
+        let activePanel = elem.parentElement.nextElementSibling;
+        if (
+          activePanel.id != "skill-panel" &&
+          document.querySelector("#skill-panel")
+        ) {
+          let skillBars = Array.from(
+            document.querySelectorAll("#skill-percent"),
+          );
+          skillBars.forEach((elem) => {
+            elem.style.width = "0";
+          });
         }
-    }, true)
+        activePanel.style.maxHeight = activePanel.scrollHeight + "px";
+      }
+    };
+  </script>
 
-    function toggleReadMore(id) {
-        var post = document.getElementById(id)
-        var fullContent = post.getElementsByClassName("full-content")[0];
-        var btnText = post.getElementsByClassName("read-more-btn")[0];
-        var textContent = post.getElementsByClassName("text-content")[0];
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
 
-        if (fullContent.style.display === "none") {
-            textContent.style.display = "none";
-            fullContent.style.display = "inline";
-            btnText.innerHTML =  null ;
+    const setTheme = (theme) => {
+      html.classList.remove("light");
+      if (theme === "dark") {
+        html.classList.add("dark");
+        window.localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        window.localStorage.setItem("theme", "light");
+      }
+      fixThemeToggleIcon(theme);
+    };
+
+    const fixThemeToggleIcon = (theme) => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (themeToggle) {
+        if (theme === "dark") {
+          themeToggle.classList.remove("bi-moon");
+          themeToggle.classList.add("bi-brightness-high");
         } else {
-            textContent.style.display = "inline";
-            fullContent.style.display = "none";
-            btnText.innerHTML =  null ;
+          themeToggle.classList.remove("bi-brightness-high");
+          themeToggle.classList.add("bi-moon");
         }
+      }
+    };
+
+    if (theme == null) {
+      if (html.classList.contains("dark")) {
+        theme = "dark";
+      } else if (html.classList.contains("light")) {
+        theme = "light";
+      } else {
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        if (prefersDark) {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+      }
     }
 
-    function toggleDropbox(id) {
-        let dropbox = document.getElementById(id);
+    setTheme(theme);
 
-        dropbox.toggleAttribute("visible");
-    }
-    </script>
-    </main>
+    const toggleTheme = () => {
+      html.classList.contains("dark") ? setTheme("light") : setTheme("dark");
+    };
+
+    window.onload = () => {
+      fixThemeToggleIcon(theme);
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-700 dark:border-gray-300 justify-between"
+>
+  <div>
+    <a class="nav-menu-item" href="http://localhost:1313/">Home</a>
+    <a class="nav-menu-item" href="/blog">Blog</a>
+  </div>
+  <div>
+    <a class="mr-4 no-underline" href="/search">
+      <i class="bi bi-search"></i>
+    </a>
+    <i
+      class="bi bi-brightness-high theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+      onclick="toggleTheme()"
+    ></i>
+  </div>
+</header>
+
+
 
     
-</main>
-</body>
+    <main class="grow">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-2 sm py-2">
+  <div class="col-span-2">
+    <div class="bg-gray-300 dark:bg-darker drop-shadow-md p-2 rounded-t-lg">
+      <div class="flex flex-col justify-center">
+        <div
+  class="w-full p-2 flex justify-center align-middle profile-photo-container"
+>
+  <img
+    class="rounded-sm"
+    src="/images/profile.jpg"
+    alt="Basma Ganfoud"
+  />
+</div>
+
+        <div class="px-2 text-center"><h1 class="mb-0 font-normal">Basma Ganfoud</h1>
+<h2 class="mb-0 font-normal">Étudiante Ingénieure — INPT Rabat</h2>
+<h3 class="mb-4">Rabat, Maroc</h3>
+<div class="mb-4 flex flex-wrap justify-center">
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://www.linkedin.com/in/basma-ganfoud">
+      <i class="mt-1 bi bi-linkedin"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="https://github.com/basmaarran-pixel">
+      <i class="mt-1 bi bi-github"></i>
+    </a>
+  </div>
+  
+  <div class="mx-2">
+    <a class="text-2xl" href="mailto:tonmail@gmail.com">
+      <i class="mt-1 bi bi-envelope"></i>
+    </a>
+  </div>
+  
+</div>
+</div>
+      </div>
+    </div>
+    <footer class="text-sm text-center border-t border-gray-500  bg-gray-200 dark:bg-dark rounded-b-lg py-2 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+
+  
+</footer>
+
+  </div>
+  <div class="col-span-3 relative">
+    
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion active">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-person"></i>
+          À propos de moi</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+        
+      >
+        <div class="markdownify-container">
+  
+    <p class="my-2">
+      Je suis Basma GANFOUD, étudiante en 1ère année cycle ingénieur à l&rsquo;Institut National des Postes et Télécommunications (INPT) de Rabat.
+    </p>
+  
+    <p class="my-2">
+      Passionnée par l&rsquo;ingénierie des données, les systèmes embarqués et le développement logiciel, je combine une approche théorique rigoureuse avec une mise en pratique technique.
+    </p>
+  
+    <p class="my-2">
+      Mon parcours m&rsquo;a permis de travailler sur des projets IoT, de la programmation de microcontrôleurs et de la modélisation logicielle via UML.
+    </p>
+  
+</div>
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-briefcase"></i>
+          Expériences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        
+<h4 style="text-decoration: underline">Projet IoT — Microcontrôleurs</h4>
+<p class="mb-0">
+  2025- 2026 &middot;
+  
+  INPT Rabat
+  
+</p>
+
+
+<ul class="my-2 ms-4 prose prose-stone dark:prose-invert max-w-none list-disc list-outside pl-6">
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Conception et programmation de microcontrôleurs.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Développement de solutions IoT dans le cadre de projets académiques.</li>
+  
+  <li class="marker:text-gray-700 dark:marker:text-gray-200">Modélisation logicielle via UML.</li>
+  
+</ul>
+ 
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-mortarboard"></i>
+          Formation</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        
+
+<h4 style="text-decoration: underline;">Cycle Ingénieur — SESNUM</h4>
+<p >2025 - Présent &middot; INPT — Institut National des Postes et Télécommunications</p>
+
+
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-list-check"></i>
+          Compétences</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        id="skill-panel"
+        
+        
+      >
+        <script>
+  let elem = document.querySelector("#skill-panel");
+  if (elem) {
+  let skillPanel = elem.previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+}
+</script>
+
+<code>Systèmes Embarqués / IoT</code>
+<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
+  <div id="skill-percent" class="75% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>C / java</code>
+<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
+  <div id="skill-percent" class="70% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Développement Web</code>
+<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
+  <div id="skill-percent" class="70% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Python</code>
+<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
+  <div id="skill-percent" class="65% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+<code>Modélisation UML</code>
+<div class="w-full mt-1 mb-3 border border-black dark:border-gray-300 rounded-sm" style="height: 1.1rem;">
+  <div id="skill-percent" class="65% bg-blue-500 dark:bg-yellow-700 h-full rounded-sm" style="width: 0; transition: all 0.5s;"></div>
+</div>
+
+
+      </div>
+    </div>
+    
+    <div class="px-2">
+      <h2 class="mb-0 accordion">
+        
+        <p onclick="expandAccordion(this)" style="cursor: pointer">
+          <i class="bi bi-controller"></i>
+          Centres d&rsquo;intérêt</p>
+      </h2>
+
+      <div
+        class="panel overflow-hidden px-2 ml-2 mb-1"
+        
+        
+      >
+        <ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Électronique &amp; IoT</li>
+  
+  <li class="list-unstyled mb-2">Développement Web</li>
+  
+  <li class="list-unstyled mb-2">Intelligence Artificielle</li>
+  
+  <li class="list-unstyled mb-2">Ingénierie des Données</li>
+  
+</ul>
+
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+    </main>
+    
+  </body>
 </html>
